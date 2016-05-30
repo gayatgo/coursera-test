@@ -2,8 +2,9 @@
 
 *{
 	font-family: Arial, Serif;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
 h1{
@@ -16,21 +17,24 @@ body{
 	padding:5%;
 }
 
+.box{
+	padding:10px;
+	float:left;
+}
+
+
 /*sections*/
 section{
 	position:relative;
 
-	border: 3px solid;
+	border: 1px solid;
 	border-color:black;
-	height: 200px;
 
 	margin-top:10px;
 	margin-bottom:10px;
 	padding:5px;
 	padding-top: 0px;
 
-	box-sizing: border-box;
-	float:left;
 	overflow:auto;
 
 	background-color: gray;
@@ -38,7 +42,7 @@ section{
 
 
 /*title labels*/
-div{
+section > div {
 	position:absolute;
 	top: 0px;
 	right: 0px;
@@ -69,67 +73,18 @@ section > p {
 	margin-top:35px;
 }
 
-
-
 /*desktop version*/
 @media(min-width: 992px) {
 
-	.s1{
-		width: 33% ;
-	}
-
-	.s2{
-		width: 33% ;
-		margin-left: .5% ;
-		margin-right:.5% ;
-	}
-
-	.s3{
-		float:right;
-		width: 33%;
+	.col-lg-4{
+		width: 33.33%;
 	}
 }
-
-
 
 /*tablet version*/
 @media(min-width:768px) and (max-width:991px){
 
-	.s1{
-		width: 49%
-
-	}
-
-	.s2{
-		float:right;
-		margin-right: 0px;
-		width: 49% 	
-	}
-
-	.s3{
-		clear:left;
-		width: 100% 
+	.col-md-6{
+		width: 50%;
 	}
 }
-
-
-
-/*mobile version*/
-@media(max-width: 767px) {
-	.s1{
-		width: 100%
-	}
-
-	.s2{
-		width: 100% 
-	}
-
-	.s3{
-		width: 100% 
-	}
-}
-
-
-.s3{
-		margin-right:0px;
-	}
